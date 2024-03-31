@@ -13,9 +13,8 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+
         * {
-            margin: 0px;
-            padding: 0px;
             box-sizing: border-box;
             font-family: "Roboto", sans-serif;
             margin: 0px auto;
@@ -24,7 +23,6 @@
 
         html,
         body {
-            font-family: "Roboto", sans-serif;
             font-weight: 300;
             line-height: 1.4;
         }
@@ -46,7 +44,8 @@
         }
 
         .heroimage img {
-            margin-top: 25px;
+            width: 400px;
+            padding-top: 25px;
         }
 
         .middle {
@@ -60,8 +59,9 @@
         .rightsidetext {
             display: flex;
             flex-direction: column;
-            padding: 100px;
             line-height: normal;
+            align-items: center;
+            justify-content: center;
             gap: 0px;
         }
 
@@ -89,7 +89,6 @@
             box-sizing: border-box;
             display: flex;
             gap: 30px;
-
         }
 
         .card {
@@ -139,10 +138,11 @@
             margin: 20px 0px;
         }
 
-        .menu .ourmenu {
+        .menu {
             display: flex;
             flex-direction: column;
             align-items: center;
+            gap: 15px;
 
         }
 
@@ -162,6 +162,40 @@
 
         .ourmenu h1 {
             margin: 20px 20px;
+        }
+
+        .space {
+            margin: 10px;
+        }
+        /* we are starting the grid over here */
+        .grid-container{
+            display:grid;
+            gap:10px;
+            grid-template-areas: 
+            "I1 I1 I2 I3"
+            "I1 I1 I2 I7"
+            "I4 I5 I6 I7";
+        }
+        .one{
+            grid-area: I1;
+        }
+        .two{
+            grid-area: I2;
+        }
+        .three{
+            grid-area: I3;
+        }
+        .four{
+            grid-area: I4;
+        }
+        .five{
+            grid-area: I5;
+        }
+        .six{
+            grid-area: I6;
+        }
+        .seven{
+            grid-area: I7;
         }
         
     </style>
@@ -226,21 +260,36 @@
     </section>
     <div class="divider"></div>
     <section class="menu">
-        <div class="ourmenu">
+        <div>
             <button class="ourmenubutton"> Our Menu</button>
-            <h1>Explore Our Menu</h1>
         </div>
-       
+        <div>
+            <h1 class="space">Explore Our Menu</h1>
+        </div>
+        <div class="grid-container">
+            <div class="one">
+                <img src="grid-Images/grid_image1.png" alt="first img">
+            </div>
+            <div class="two">
+                <img src="grid-Images/grid_image2.png" alt="second img">
+            </div>
+            <div class="three">
+                <img src="grid-Images/grid_image3.png" alt="third img">
+            </div>
+            <div class="four">
+                <img src="grid-Images/grid_image4.png" alt="fourth img">
+            </div>
+            <div class="five">
+                <img src="grid-Images/grid_image5.png" alt="fifth image">
+            </div>
+            <div class="six">
+                <img src="grid-Images/grid_image6.png" alt="six image">
+            </div>
+            <div class="seven">
+                <img src="grid-Images/grid_image7.png" alt="seven image">
+            </div>
+        </div>
     </section>
-    <div class="grid-container">
-        <div class="one"><img src="grid-Images/grid_image1.png" alt="first img"></div>
-        <div class="two"><img src="grid-Images/grid_image2.png" alt="second img"></div>
-        <div class="three"><img src="grid-Images/grid_image3.png" alt="third img"></div>
-        <div class="four"><img src="grid-Images/grid_image4.png" alt="fourth img"></div>
-        <div class="five"><img src="grid-Images/grid_image5.png" alt="fifth image"></div>
-        <div class="six"><img src="grid-Images/grid_image6.png" alt="six image"></div>
-        <div class="seven"><img src="grid-Images/grid_image7.png" alt="seven image"></div>
-    </div>
 </body>
 
 </html>
