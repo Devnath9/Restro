@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restro | website </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: "Roboto", sans-serif;
+            margin: 0px auto;
+            max-width: 1100px;
+        }
+
+        html,
+        body {
+            font-family: "Roboto", sans-serif;
+            font-weight: 300;
+            line-height: 1.4;
+        }
+
+        /* Navigation menu  */
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .baricon {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        nav {
+            border-bottom: 3px solid gray;
+        }
+
+        .heroimage img {
+            margin-top: 25px;
+        }
+
+        .middle {
+            display: flex;
+            gap: 100px;
+            margin-bottom: 50px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .rightsidetext {
+            display: flex;
+            flex-direction: column;
+            padding: 100px;
+            line-height: normal;
+            gap: 0px;
+        }
+
+        .greenstyle {
+            background-color: green;
+            color: white;
+        }
+
+        .rightsidetext h1 {
+            font-size: 40px;
+        }
+
+        .loremtext {
+            font-weight: 300;
+            font-size: 15px;
+        }
+
+        .button {
+            padding: 10px 15px;
+            background-color: orange;
+            border: none;
+        }
+
+        .threecard {
+            box-sizing: border-box;
+            display: flex;
+            gap: 30px;
+
+        }
+
+        .card {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            line-height: 20px;
+        }
+
+        .card:hover {
+            padding-left: 10px;
+            box-shadow: 2px 3px 4px rgba(1, 1, 1, 0.4);
+            transition: 0.3s ease-in-out;
+        }
+
+        .button:hover {
+            transform: scale(1.01);
+            transition: 0.1s ease-in-out;
+            box-shadow: 3px 4px 4px rgba(1, 1, 1, 0.3);
+            opacity: 0.8;
+        }
+
+        .ok {
+            padding: 10px 0px;
+        }
+
+        .parent,
+        .loremtext {
+            margin-bottom: 10px;
+        }
+
+        .good {
+            max-width: 500px;
+            background-color: black;
+        }
+
+        @media(max-width:550px) {
+            .middle {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        /* divider between the first part and second part */
+        .divider {
+            border: 1px solid blueviolet;
+            margin: 20px 0px;
+        }
+
+        .menu .ourmenu {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        .ourmenubutton {
+            background-color: green;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+        }
+
+        .ourmenubutton:hover {
+            transform: scale(1.1);
+            transition: 0.2s ease-in-out;
+            box-shadow: 4px 4px 4px rgba(1, 1, 1, 0.2);
+            opacity: 0.6;
+        }
+
+        .ourmenu h1 {
+            margin: 20px 20px;
+        }
+        
+    </style>
+
+    <script src="https://kit.fontawesome.com/f46d2a9e0f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="navigation container">
+            <div class="logo_container">
+                <img src="grid-Images/logo.png" alt="top left logo">
+            </div>
+            <div class="baricon">
+                <i class="fa-solid fa-bars"></i> <!--these icon taken from fontawseome website-->
+            </div>
+        </div>
+    </nav>
+    <section class="middle">
+        <div class="heroimage">
+            <img src="./grid-Images/hero_image.png" alt="hereo image">
+        </div>
+        <div class="rightsidetext">
+            <div>
+                <h3><span class="greenstyle">50% OFF on All Product</span></h3>
+            </div>
+            <div class="ok">
+                <h1>Enjoy Your <br> Delicious Food</h1>
+            </div>
+            <div class="parent">
+                <h3 class="loremtext">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
+            </div>
+            <div>
+                <button class="button">Explore Now</button>
+            </div>
+        </div>
+    </section>
+    <section class="threecard">
+        <div class="firstcard card">
+            <div class="logoimages"><img src="./logo/discount.png" alt="discount"></div>
+            <div>
+                <h3>Discount Voucher</h3>
+                <h3 class="loremtext">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, quia?</h3>
+            </div>
+        </div>
+
+        <div class="secondcard card">
+            <div class="logoimages"><img src="./logo/fresh.png" alt="fresh"></div>
+            <div>
+                <h3>Fresh Healthy Food</h3>
+                <h3 class="loremtext">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, quia?</h3>
+            </div>
+        </div>
+        <div class="thirdcard card">
+            <div class="logoimages"><img src="./logo/delivery.png" alt="delivery"></div>
+            <div>
+                <h3>Fast Home Delivery</h3>
+                <h3 class="loremtext">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, quia?</h3>
+            </div>
+        </div>
+
+    </section>
+    <div class="divider"></div>
+    <section class="menu">
+        <div class="ourmenu">
+            <button class="ourmenubutton"> Our Menu</button>
+            <h1>Explore Our Menu</h1>
+        </div>
+       
+    </section>
+    <div class="grid-container">
+        <div class="one"><img src="grid-Images/grid_image1.png" alt="first img"></div>
+        <div class="two"><img src="grid-Images/grid_image2.png" alt="second img"></div>
+        <div class="three"><img src="grid-Images/grid_image3.png" alt="third img"></div>
+        <div class="four"><img src="grid-Images/grid_image4.png" alt="fourth img"></div>
+        <div class="five"><img src="grid-Images/grid_image5.png" alt="fifth image"></div>
+        <div class="six"><img src="grid-Images/grid_image6.png" alt="six image"></div>
+        <div class="seven"><img src="grid-Images/grid_image7.png" alt="seven image"></div>
+    </div>
+</body>
+
+</html>
